@@ -3,52 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Generator & Contact</title>
+    <title>국회의원 정보 검색</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <button id="theme-toggle-btn">🌙</button>
     <div class="container">
-        <h2>국회의원 정보 검색</h2>
+        <h1>국회의원 정보 검색</h1>
         <div class="member-search-section">
-            <input type="text" id="member-search-input" placeholder="국회의원 이름 입력">
+            <input type="text" id="member-name-input" placeholder="국회의원 이름 (예: 김원이)">
+            <input type="text" id="committee-name-input" placeholder="소속 위원회명 (예: 보건복지위원회)">
             <button id="search-member-btn">검색</button>
         </div>
         <div id="member-results">
             <!-- 국회의원 검색 결과가 여기에 표시됩니다 -->
+            <p class="placeholder-text">이름과 소속 위원회명을 입력하고 검색해주세요.</p>
         </div>
-
-        <h1>Lotto Number Generator</h1>
-        <div id="results-container"></div>
-        <button id="generate-btn">Generate Numbers</button>
-        
-        <hr style="margin: 40px 0;">
-
-        <h2>Partnership Inquiry</h2>
-        <form action="https://formspree.io/f/mnjvgpna" method="POST" id="partnership-form">
-            <div class="form-group">
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="company">Company (Optional):</label>
-                <input type="text" id="company" name="company">
-            </div>
-            <div class="form-group">
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit">Send Inquiry</button>
-        </form>
-        <footer>
-            <p>© 2026 GLOrious-netizen. All rights reserved.</p>
-            <p>since 2026</p>
-        </footer>
     </div>
     <script src="main.js"></script>
+    <footer>
+        <p>© 2026 GLOrious-netizen. All rights reserved.</p>
+        <p>since 2026</p>
+        <p>보좌진 정보 검색은 현재 제공되는 API로는 어렵습니다.</p>
+    </footer>
 </body>
 </html>
