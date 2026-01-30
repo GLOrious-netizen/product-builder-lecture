@@ -194,11 +194,27 @@ footer p {
 }
 
 @media (max-width: 600px) {
+    .container {
+        padding: 20px; /* Reduce container padding on small screens */
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
     .member-search-section input[type="text"] {
         width: 100%; /* Stack inputs on small screens */
     }
     .member-search-section {
         flex-direction: column;
         align-items: center;
+    }
+
+    footer {
+        padding: 15px; /* Adjust footer padding */
     }
 }
