@@ -160,3 +160,16 @@ h1 {
     background-color: var(--btn-hover-bg);
 }
 
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: var(--secondary-text-color);
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
