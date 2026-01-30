@@ -1,27 +1,47 @@
+:root {
+    --bg-color: #f0f2f5;
+    --container-bg: #fff;
+    --text-color: #333;
+    --secondary-text-color: #555;
+    --btn-bg: #007bff;
+    --btn-hover-bg: #0056b3;
+}
+
+.dark-mode {
+    --bg-color: #121212;
+    --container-bg: #1e1e1e;
+    --text-color: #e0e0e0;
+    --secondary-text-color: #a0a0a0;
+    --btn-bg: #1e88e5;
+    --btn-hover-bg: #1565c0;
+}
+
 body {
     font-family: 'Helvetica Neue', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f0f2f5;
+    background-color: var(--bg-color);
     margin: 0;
     padding: 20px;
+    transition: background-color 0.3s ease;
 }
 
 .container {
     text-align: center;
-    background-color: #fff;
+    background-color: var(--container-bg);
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 600px;
+    transition: background-color 0.3s ease;
 }
 
 h1 {
     margin-bottom: 30px;
-    color: #333;
+    color: var(--text-color);
 }
 
 .numbers-set {
@@ -35,7 +55,7 @@ h1 {
     font-size: 20px;
     font-weight: bold;
     margin-right: 15px;
-    color: #555;
+    color: var(--secondary-text-color);
 }
 
 .number {
@@ -56,7 +76,7 @@ h1 {
     padding: 15px 30px;
     border: none;
     border-radius: 10px;
-    background-color: #007bff;
+    background-color: var(--btn-bg);
     color: #fff;
     font-size: 18px;
     cursor: pointer;
@@ -65,5 +85,25 @@ h1 {
 }
 
 #generate-btn:hover {
-    background-color: #0056b3;
+    background-color: var(--btn-hover-bg);
+}
+
+#theme-toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--container-bg);
+    color: var(--text-color);
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#theme-toggle-btn:hover {
+    transform: scale(1.1);
 }
